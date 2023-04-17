@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Shop</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+		<h1>Brand Shop</h1>
+		<form>
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
+			<input class="btn" type="submit" id="login" value="Login" onclick="getJwtAuth()">
+		</form>
+
+		<div class="qr-code">
+			<div id="qrcode"></div>
+			<p style="padding: 10px 0px 0px; color:#fff">Scan with Signature</p>
+		</div>
+	</div>
+    <div class="copyright">
+        <p>© 2023 Brand Shop (Signature Demo Authentication Page)</p>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example App Using WebSockets and JWTs</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+        }
+
+        #loginForm {
+            text-align: center;
+        }
+
+        #errorMessage {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example App Using WebSockets and JWTs</h1>
+    <div class="row">
+        <div class="column" id="loginForm">
+            <span id="errorMessage"></span>
+            <form>
+                <label for="username">Username: </label>
+                <input type="text" id="username"/><br/>
+                <label for="password">Password: </label>
+                <input type="text" id="password"/><br/>
+                <input type="button" id="login" value="Login" onclick="getJwtAuth()"/>
+            </form>
+            <form>
+                <label for="messageContent">Message: </label>
+                <textarea id="messageContent"></textarea>
+                <input type="button" id="send" value="Send" onclick="sendWsMessage()"/>
+            </form>
+        </div>
+        <div class="column" id="messages"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html> -->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Bank</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<h1>Business Bank</h1>
+    <div class="container">
+		<div class="left">
+			<form id='login'>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" required>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+				<button class="btn" type="submit">Log In</button>
+			</form>
+		</div>
+		<div class="right">
+			<div id="qrcode"></div>
+			<p style="padding: 10px 0px 0px;">Scan with Signature</p>
+		</div>
+	</div>
+    <div class="copyright">
+        <p style="padding: 0px 0 30px 0;">© 2023 Business Bank BD Ltd.</p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
